@@ -5,7 +5,7 @@ def matrix_multiply(m, n):
     # m: i x j
     # n: j x k
     assert len(m[0]) == len(n)
-    result = [[0 for _ in range(len(m))] for _ in range(len(n[0]))]
+    result = [[0 for _ in range(len(n[0]))] for _ in range(len(m))]
     for i in range(len(m)):
         for k in range(len(n[0])):
             for j in range(len(n)):
